@@ -1,18 +1,44 @@
-## What next?
+<h2 class="c-project-heading--task">Click Earth for facts</h2>
 
-If you are following the [More Python](https://projects.raspberrypi.org/en/pathways/more-python) path, you can move on to the [Codebreaker](https://projects.raspberrypi.org/en/projects/codebreaker/) project. In that project, you will analyse a graph to crack a hidden code!
+--- task ---
+Add an Earth check so clicking Earth prints Earth’s name and fact.
+--- /task ---
 
---- print-only ---
+<div class="c-project-callout c-project-callout--tip" style="font-size: 1.1em">
+  <strong>Tip:</strong> Using <code>elif</code> means only one planet’s fact prints per click.
+</div>
 
-![The codebreaker project.](images/codebreaker.png)
+<div class="c-project-code">
 
---- /print-only ---
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 114
+line_highlights: 125-127
+---
+def mouse_pressed():
+    # Put code to run when the mouse is pressed here
+    # Here the RGB value is converted to Hex so it can be used in a string comparison later
+    pixel_colour = Color(get(mouse_x, mouse_y)).hex
 
---- no-print ---
+    if pixel_colour == mercury['colour'].hex:
+        print(mercury['name'])
+        print(mercury['info'])
+    elif pixel_colour == venus['colour'].hex:
+        print(venus['name'])
+        print(venus['info'])
+    elif pixel_colour == earth['colour'].hex:
+        print(earth['name'])
+        print(earth['info'])
 
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/codebreaker-project-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
-</iframe>
 
---- /no-print ---
+run(frame_rate=60)
+--- /code ---
 
-If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
+</div>
+
+--- task ---
+**Test:** Run your code and click Earth — check Earth’s **name and fact** print in the output.
+--- /task ---
