@@ -1,4 +1,3 @@
-#!/bin/python3
 from p5 import *
 from make_planet import make_planet
 
