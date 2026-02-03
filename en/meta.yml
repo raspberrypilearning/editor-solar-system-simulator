@@ -10,20 +10,18 @@ copyedit: true
 last_tested: "2021-10-13"
 steps:
   - title: You will make
-  - title: Create a dictionary
+  - title: Show Mercury's Orbit
   - title: Make Mercury
     completion:
       - engaged
+  - title: Mercury Facts
   - title: Make Venus
-  - title: Make Earth
     completion:
       - internal
-  - title: Quick quiz
-    knowledge_quiz:
-      path: quiz1
-      version: 1
-      questions: 3
-      passing_score: 3
+  - title: Venus Facts
+  - title: Make Earth
+  - title: Earth Facts
     completion:
       - external
-  - title: Upgrade your project
+  - title: Challenge
+    challenge: true
