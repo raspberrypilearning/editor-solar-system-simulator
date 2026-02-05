@@ -16,7 +16,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 52
-line_highlights: 61-68
+line_highlights: 66-68
 ---
 def draw():
     # Put code to run every frame here

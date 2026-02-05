@@ -31,6 +31,7 @@ def draw_sun():
 def draw_orbits():
     no_fill()
     stroke(255)  # Make it white
+    
     ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
 
 

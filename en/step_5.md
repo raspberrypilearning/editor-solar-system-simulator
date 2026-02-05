@@ -5,7 +5,7 @@ Load Venus from <code>planets.csv</code> and draw Venus so you can see two plane
 --- /task ---
 
 <div class="c-project-callout c-project-callout--tip" style="font-size: 1.1em">
-  <strong>Tip:</strong> CSV data is read as text, so you use <code>int()</code> and <code>float()</code> to convert number strings.
+  <strong>Tip:</strong> CSV data is read as text, so you use <code>int()</code> and <code>float()</code> to convert number strings to number **values**.
 </div>
 
 <div class="c-project-code">
@@ -16,7 +16,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 16,35-38,40-45,50,59,61-63,65-72
+line_highlights: 16,35-45,50,61-73
 ---
 from p5 import *
 from make_planet import make_planet
