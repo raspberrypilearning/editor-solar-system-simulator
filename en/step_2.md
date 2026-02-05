@@ -61,7 +61,12 @@ def draw():
     draw_sun()
     draw_orbits()
 
+def mouse_pressed():
+    # Put code to run when the mouse is pressed here
+    # Here the RGB value is converted to Hex so it can be used in a string comparison later
+    pixel_colour = Color(get(mouse_x, mouse_y)).hex
 
+    
 run(frame_rate=60)
 --- /code ---
 
