@@ -13,15 +13,15 @@ steps:
   - title: Show Mercury's Orbit
   - title: Make Mercury
     completion:
-      - engaged
+    - engaged
   - title: Mercury Facts
   - title: Make Venus
     completion:
-      - internal
+    - internal
   - title: Venus Facts
   - title: Make Earth
   - title: Earth Facts
     completion:
-      - external
+    - external
   - title: Challenge
     challenge: true
