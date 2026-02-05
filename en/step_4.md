@@ -15,8 +15,8 @@ Detect when Mercury is clicked and print its name and fact in the output.
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 55
-line_highlights: 64-67,69-71
+line_number_start: 52
+line_highlights: 61-68
 ---
 def draw():
     # Put code to run every frame here
