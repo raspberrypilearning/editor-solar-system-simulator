@@ -16,7 +16,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 10-14,18-28,34,42
+line_highlights: 10-14,20-31,37,45
 ---
 from p5 import *
 from make_planet import make_planet
