@@ -16,7 +16,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 20,22-25,27-32,61
+line_highlights: 18-29,58
 ---
 from p5 import *
 from make_planet import make_planet
@@ -36,7 +36,6 @@ def draw_orbits():
 
 # draw_planets function
 def draw_planets():
-
     colour = mercury['colour']
     orbit = mercury['orbit']
     size = mercury['size']
