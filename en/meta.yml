@@ -3,7 +3,7 @@ title: Solar system
 hero_image: images/banner.png
 description: Get to know Python dictionaries by creating a model of the solar system
 meta_title: Python coding projects for kids and teens | Solar system
-meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Get to know Python dictionaries by creating a model of the solar system.
+meta_description: Get to know Python dictionaries by creating a model of the solar system!
 version: 4
 listed: true
 copyedit: true
@@ -13,15 +13,15 @@ steps:
   - title: Show Mercury's Orbit
   - title: Make Mercury
     completion:
-      - engaged
+    - engaged
   - title: Mercury Facts
   - title: Make Venus
     completion:
-      - internal
+    - internal
   - title: Venus Facts
   - title: Make Earth
   - title: Earth Facts
     completion:
-      - external
+    - external
   - title: Challenge
     challenge: true
