@@ -4,13 +4,9 @@
 Add a Venus check so clicking Venus prints Venus’s name and fact.
 --- /task ---
 
-<div class="c-project-callout c-project-callout--debug" style="font-size: 1.1em">
-  <strong>Debug:</strong> If clicking does nothing, make sure you used <code>==</code> for comparison (not <code>=</code>).
-</div>
-
-<div class="c-project-code">
 
 --- code ---
+
 ---
 language: python
 filename: main.py
@@ -32,10 +28,19 @@ def mouse_pressed():
 
 
 run(frame_rate=60)
+
 --- /code ---
 
 </div>
 
 --- task ---
+
 **Test:** Run your code and click Venus — check Venus’s **name and fact** print in the output.
+
 --- /task ---
+
+<div class="c-project-callout c-project-callout--debug" style="font-size: 1.1em">
+  <strong>Debug:</strong> If clicking does nothing, make sure you used <code>==</code> for comparison (not <code>=</code>).
+</div>
+
+<div class="c-project-code">
