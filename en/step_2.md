@@ -16,7 +16,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 10-13,15,17,20-22,24-31,37,45
+line_highlights: 10-14,18-28,34,42
 ---
 from p5 import *
 from make_planet import make_planet
@@ -31,7 +31,6 @@ def draw_sun():
 def draw_orbits():
     no_fill()
     stroke(255)  # Make it white
-
     ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
 
 
