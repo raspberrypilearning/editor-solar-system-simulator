@@ -35,8 +35,6 @@ def draw_orbits():
     ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
 
 # draw_planets function
-
-
 def draw_planets():
 
     colour = mercury['colour']

@@ -34,6 +34,9 @@ def draw_orbits():
     ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
 
 
+# draw_planets function
+
+
 # load_planets function
 def load_planets():
     global mercury
