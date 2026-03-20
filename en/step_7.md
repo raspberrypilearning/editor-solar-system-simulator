@@ -14,32 +14,19 @@ Load Earth from <code>planets.csv</code> and draw Earth so you can see three pla
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 1
-line_highlights: 17,48-51,53-58,63,87-96
+line_number_start: 10
+line_highlights: 16,44-55,85-93
 ---
-from p5 import *
-from make_planet import make_planet
-
-
-def draw_sun():
-    fill(255, 255, 0)  # Yellow
-    ellipse(width / 2, height / 2, 100, 100)
-
-
 # draw_orbits function
 def draw_orbits():
     no_fill()
     stroke(255)  # Make it white
-
     ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
     ellipse(width / 2, height / 2, venus['orbit'], venus['orbit'])
-    ellipse(width / 2, height / 2, earth['orbit'], earth['orbit'])
+    ellipse(width / 2, height / 2, earth['orbit'], earth['orbit'])  # Draw Earth's orbit ring
 
 # draw_planets function
-
-
 def draw_planets():
-
     colour = mercury['colour']
     orbit = mercury['orbit']
     size = mercury['size']
@@ -64,12 +51,13 @@ def draw_planets():
         speed
     )
 
-    colour = earth['colour']
-    orbit = earth['orbit']
-    size = earth['size']
-    speed = earth['speed']
+    # Draw Earth
+    colour = earth['colour']  # Get Earth's colour from the dictionary
+    orbit = earth['orbit']  # Get Earth's orbit diameter
+    size = earth['size']  # Get Earth's drawn size
+    speed = earth['speed']  # Get Earth's orbit speed
 
-    make_planet(
+    make_planet(  # Draw Earth moving around its orbit
         colour,
         orbit,
         size,
@@ -79,7 +67,7 @@ def draw_planets():
 
 # load_planets function
 def load_planets():
-    global mercury, venus, earth
+    global mercury, venus, earth  # Make all three planet dictionaries global
 
     mercury = {
         'name': 'Mercury',
@@ -104,8 +92,8 @@ def load_planets():
         'info': planet[7]
     }
 
-    planet = lines[3].split(',')
-    earth = {
+    planet = lines[3].split(',')  # Split Earth's data from the CSV line
+    earth = {  # Build Earth's dictionary from the CSV values
         'name': planet[0],
         'colour': Color(int(planet[1]), int(planet[2]), int(planet[3])),
         'size': int(planet[4]),
@@ -113,37 +101,6 @@ def load_planets():
         'speed': float(planet[6]),
         'info': planet[7]
     }
-
-
-def setup():
-    # Put code to run once here
-    size(400, 400)
-    load_planets()
-
-
-def draw():
-    # Put code to run every frame here
-    background(0)
-    no_stroke()
-    draw_sun()
-    draw_orbits()
-    draw_planets()
-
-
-def mouse_pressed():
-    # Put code to run when the mouse is pressed here
-    # Here the RGB value is converted to Hex so it can be used in a string comparison later
-    pixel_colour = Color(get(mouse_x, mouse_y)).hex
-
-    if pixel_colour == mercury['colour'].hex:
-        print(mercury['name'])
-        print(mercury['info'])
-    elif pixel_colour == venus['colour'].hex:
-        print(venus['name'])
-        print(venus['info'])
-
-
-run(frame_rate=60)
 
 --- /code ---
 

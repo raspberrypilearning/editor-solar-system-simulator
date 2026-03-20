@@ -1,4 +1,4 @@
-<h2 class="c-project-heading--task">Click Earth for facts</h2>
+<h2 class="c-project-heading--task">Add Earth facts</h2>
 
 --- task ---
 Add an Earth check so clicking Earth prints Earth’s name and fact.
@@ -29,9 +29,9 @@ def mouse_pressed():
     elif pixel_colour == venus['colour'].hex:
         print(venus['name'])
         print(venus['info'])
-    elif pixel_colour == earth['colour'].hex:
-        print(earth['name'])
-        print(earth['info'])
+    elif pixel_colour == earth['colour'].hex:  # Otherwise, check if the click was on Earth
+        print(earth['name'])  # Print Earth's name
+        print(earth['info'])  # Print Earth's fact
 
 
 run(frame_rate=60)

@@ -1,9 +1,11 @@
-<h2 class="c-project-heading--task">Click Venus for facts</h2>
+<h2 class="c-project-heading--task">Add Venus facts</h2>
 
 --- task ---
 Add a Venus check so clicking Venus prints Venus’s name and fact.
 --- /task ---
 
+
+<div class="c-project-code">
 
 --- code ---
 
@@ -22,9 +24,9 @@ def mouse_pressed():
     if pixel_colour == mercury['colour'].hex:
         print(mercury['name'])
         print(mercury['info'])
-    elif pixel_colour == venus['colour'].hex:
-        print(venus['name'])
-        print(venus['info'])
+    elif pixel_colour == venus['colour'].hex:  # Otherwise, check if the click was on Venus
+        print(venus['name'])  # Print Venus' name
+        print(venus['info'])  # Print Venus' fact
 
 
 run(frame_rate=60)
@@ -42,5 +44,3 @@ run(frame_rate=60)
 <div class="c-project-callout c-project-callout--debug" style="font-size: 1.1em">
   <strong>Debug:</strong> If clicking does nothing, make sure you used <code>==</code> for comparison (not <code>=</code>).
 </div>
-
-<div class="c-project-code">

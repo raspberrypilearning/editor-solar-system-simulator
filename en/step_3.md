@@ -1,4 +1,4 @@
-<h2 class="c-project-heading--task">Make Mercury</h2>
+<h2 class="c-project-heading--task">Draw Mercury</h2>
 
 --- task ---
 Use Mercury’s dictionary to draw Mercury so you can see it moving around the orbit.
@@ -16,7 +16,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 18-29,58
+line_highlights: 17-29,58
 ---
 from p5 import *
 from make_planet import make_planet
@@ -31,17 +31,17 @@ def draw_sun():
 def draw_orbits():
     no_fill()
     stroke(255)  # Make it white
-
     ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
 
 # draw_planets function
-def draw_planets():
-    colour = mercury['colour']
-    orbit = mercury['orbit']
-    size = mercury['size']
-    speed = mercury['speed']
+def draw_planets():  # Draw the planet(s)
+    # Draw Mercury using the values stored in its dictionary
+    colour = mercury['colour']  # Get Mercury's colour from the dictionary
+    orbit = mercury['orbit']  # Get Mercury's orbit diameter
+    size = mercury['size']  # Get Mercury's drawn size
+    speed = mercury['speed']  # Get Mercury's orbit speed
 
-    make_planet(
+    make_planet(  # Use the helper to draw Mercury moving around its orbit
         colour,
         orbit,
         size,
@@ -75,14 +75,12 @@ def draw():
     no_stroke()
     draw_sun()
     draw_orbits()
-    draw_planets()
+    draw_planets()  # Draw Mercury each frame so it animates
 
 def mouse_pressed():
     # Put code to run when the mouse is pressed here
     # Here the RGB value is converted to Hex so it can be used in a string comparison later
     pixel_colour = Color(get(mouse_x, mouse_y)).hex
-
-    
 run(frame_rate=60)
 --- /code ---
 
