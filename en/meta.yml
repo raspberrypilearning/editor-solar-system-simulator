@@ -10,17 +10,17 @@ copyedit: true
 last_tested: "2021-10-13"
 steps:
   - title: You will make
-  - title: Show Mercury's Orbit
-  - title: Make Mercury
+  - title: Show Mercury orbit
+  - title: Draw Mercury
     completion:
     - engaged
-  - title: Mercury Facts
-  - title: Make Venus
+  - title: Add Mercury facts
+  - title: Add Venus
     completion:
     - internal
-  - title: Venus Facts
-  - title: Make Earth
-  - title: Earth Facts
+  - title: Add Venus facts
+  - title: Add Earth
+  - title: Add Earth facts
     completion:
     - external
   - title: Challenge

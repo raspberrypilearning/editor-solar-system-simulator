@@ -16,7 +16,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 11-14,21-31,45
+line_highlights: 11-14,21-31,37,46
 ---
 from p5 import *
 from make_planet import make_planet
@@ -57,6 +57,7 @@ def setup():
     load_planets()  # Load Mercury before the first frame is drawn
 
 
+
 def draw():
     # Put code to run every frame here
     background(0)
@@ -69,7 +70,7 @@ def mouse_pressed():
     # Here the RGB value is converted to Hex so it can be used in a string comparison later
     pixel_colour = Color(get(mouse_x, mouse_y)).hex  # Read the colour of the pixel you clicked
 
-    
+
 run(frame_rate=60)
 --- /code ---
 

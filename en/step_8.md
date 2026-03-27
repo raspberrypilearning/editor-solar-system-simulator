@@ -15,8 +15,8 @@ Add an Earth check so clicking Earth prints Earth’s name and fact.
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 114
-line_highlights: 125-127
+line_number_start: 107
+line_highlights: 118-120
 ---
 def mouse_pressed():
     # Put code to run when the mouse is pressed here
@@ -29,9 +29,9 @@ def mouse_pressed():
     elif pixel_colour == venus['colour'].hex:
         print(venus['name'])
         print(venus['info'])
-    elif pixel_colour == earth['colour'].hex:  # Otherwise, check if the click was on Earth
-        print(earth['name'])  # Print Earth's name
-        print(earth['info'])  # Print Earth's fact
+    elif pixel_colour == earth['colour'].hex:
+        print(earth['name'])
+        print(earth['info'])
 
 
 run(frame_rate=60)

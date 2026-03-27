@@ -11,16 +11,12 @@ def draw_sun():
 def draw_orbits():
     no_fill()
     stroke(255)  # Make it white
-
     ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
     ellipse(width / 2, height / 2, venus['orbit'], venus['orbit'])
     ellipse(width / 2, height / 2, earth['orbit'], earth['orbit'])
 
 # draw_planets function
-
-
 def draw_planets():
-
     colour = mercury['colour']
     orbit = mercury['orbit']
     size = mercury['size']
@@ -32,7 +28,6 @@ def draw_planets():
         size,
         speed
     )
-
     colour = venus['colour']
     orbit = venus['orbit']
     size = venus['size']
@@ -44,7 +39,6 @@ def draw_planets():
         size,
         speed
     )
-
     colour = earth['colour']
     orbit = earth['orbit']
     size = earth['size']
@@ -56,7 +50,6 @@ def draw_planets():
         size,
         speed
     )
-
 
 # load_planets function
 def load_planets():
@@ -74,17 +67,15 @@ def load_planets():
     with open('planets.csv') as f:
         data = f.read()
         lines = data.splitlines()
-
-    planet = lines[2].split(',')  # Split Venus' data
+    planet = lines[2].split(',')
     venus = {
         'name': planet[0],
         'colour': Color(int(planet[1]), int(planet[2]), int(planet[3])),
-        'size': int(planet[4]),  # int() for whole numbers
+        'size': int(planet[4]),
         'orbit': int(planet[5]),
-        'speed': float(planet[6]),  # float() for decimals
+        'speed': float(planet[6]),
         'info': planet[7]
     }
-
     planet = lines[3].split(',')
     earth = {
         'name': planet[0],
@@ -94,7 +85,6 @@ def load_planets():
         'speed': float(planet[6]),
         'info': planet[7]
     }
-
 
 def setup():
     # Put code to run once here
@@ -110,7 +100,6 @@ def draw():
     draw_orbits()
     draw_planets()
 
-
 def mouse_pressed():
     # Put code to run when the mouse is pressed here
     # Here the RGB value is converted to Hex so it can be used in a string comparison later
@@ -125,6 +114,5 @@ def mouse_pressed():
     elif pixel_colour == earth['colour'].hex:
         print(earth['name'])
         print(earth['info'])
-
 
 run(frame_rate=60)

@@ -16,14 +16,14 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 10
-line_highlights: 15,32-43,57-69
+line_highlights: 15,31-41,45,57-69
 ---
 # draw_orbits function
 def draw_orbits():
     no_fill()
     stroke(255)  # Make it white
     ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
-    ellipse(width / 2, height / 2, venus['orbit'], venus['orbit'])  # Draw Venus' orbit ring
+    ellipse(width / 2, height / 2, venus['orbit'], venus['orbit'])
 
 # draw_planets function
 def draw_planets():
@@ -39,13 +39,12 @@ def draw_planets():
         speed
     )
 
-    # Draw Venus
-    colour = venus['colour']  # Get Venus' colour from the dictionary
-    orbit = venus['orbit']  # Get Venus' orbit diameter
-    size = venus['size']  # Get Venus' drawn size
-    speed = venus['speed']  # Get Venus' orbit speed
+    colour = venus['colour']
+    orbit = venus['orbit']
+    size = venus['size']
+    speed = venus['speed']
 
-    make_planet(  # Draw Venus moving around its orbit
+    make_planet(
         colour,
         orbit,
         size,
@@ -54,7 +53,7 @@ def draw_planets():
 
 # load_planets function
 def load_planets():
-    global mercury, venus  # Make both planet dictionaries global
+    global mercury, venus
 
     mercury = {
         'name': 'Mercury',
@@ -65,17 +64,18 @@ def load_planets():
         'info': 'The smallest, and fastest, planet.'
     }
 
-    with open('planets.csv') as f:  # Load Venus from planets.csv
-        data = f.read()  # Read the whole file into a string
-        lines = data.splitlines()  # Split into a list of lines (one per planet)
 
-    planet = lines[2].split(',')  # Split Venus' data into a list of values
-    venus = {  # Build Venus' dictionary from the CSV values
+    with open('planets.csv') as f:
+        data = f.read()
+        lines = data.splitlines()
+
+    planet = lines[2].split(',')
+    venus = {
         'name': planet[0],
         'colour': Color(int(planet[1]), int(planet[2]), int(planet[3])),
-        'size': int(planet[4]),  # int() for whole numbers
+        'size': int(planet[4]),
         'orbit': int(planet[5]),
-        'speed': float(planet[6]),  # float() for decimals
+        'speed': float(planet[6]),
         'info': planet[7]
     }
 --- /code ---
