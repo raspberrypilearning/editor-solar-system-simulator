@@ -8,14 +8,8 @@ def draw_sun():
 
 
 # draw_orbits function
-
-
 # draw_planets function
-
-
 # load_planets function
-
-
 def setup():
     # Put code to run once here
     size(400, 400)
@@ -32,6 +26,5 @@ def mouse_pressed():
     # Put code to run when the mouse is pressed here
     # Here the RGB value is converted to Hex so it can be used in a string comparison later
     pixel_colour = Color(get(mouse_x, mouse_y)).hex
-
 
 run(frame_rate=60)

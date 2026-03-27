@@ -15,7 +15,7 @@ Detect when Mercury is clicked and print its name and fact in the output.
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 48
+line_number_start: 49
 line_highlights: 62-64
 ---
 def draw():
@@ -32,9 +32,9 @@ def mouse_pressed():
     # Here the RGB value is converted to Hex so it can be used in a string comparison later
     pixel_colour = Color(get(mouse_x, mouse_y)).hex
 
-    if pixel_colour == mercury['colour'].hex:  # Check if the clicked pixel matches Mercury's colour
-        print(mercury['name'])  # Print Mercury's name
-        print(mercury['info'])  # Print Mercury's fact
+    if pixel_colour == mercury['colour'].hex:
+        print(mercury['name'])
+        print(mercury['info'])
 
 
 run(frame_rate=60)

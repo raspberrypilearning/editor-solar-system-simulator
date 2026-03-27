@@ -16,7 +16,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 17-29,58
+line_highlights: 16-28,55
 ---
 from p5 import *
 from make_planet import make_planet
@@ -34,20 +34,18 @@ def draw_orbits():
     ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
 
 # draw_planets function
-def draw_planets():  # Draw the planet(s)
-    # Draw Mercury using the values stored in its dictionary
-    colour = mercury['colour']  # Get Mercury's colour from the dictionary
-    orbit = mercury['orbit']  # Get Mercury's orbit diameter
-    size = mercury['size']  # Get Mercury's drawn size
-    speed = mercury['speed']  # Get Mercury's orbit speed
+def draw_planets():
+    colour = mercury['colour']
+    orbit = mercury['orbit']
+    size = mercury['size']
+    speed = mercury['speed']
 
-    make_planet(  # Use the helper to draw Mercury moving around its orbit
+    make_planet(
         colour,
         orbit,
         size,
         speed
     )
-
 
 # load_planets function
 def load_planets():
@@ -62,7 +60,6 @@ def load_planets():
         'info': 'The smallest, and fastest, planet.'
     }
 
-
 def setup():
     # Put code to run once here
     size(400, 400)
@@ -75,12 +72,13 @@ def draw():
     no_stroke()
     draw_sun()
     draw_orbits()
-    draw_planets()  # Draw Mercury each frame so it animates
+    draw_planets()
 
 def mouse_pressed():
     # Put code to run when the mouse is pressed here
     # Here the RGB value is converted to Hex so it can be used in a string comparison later
     pixel_colour = Color(get(mouse_x, mouse_y)).hex
+
 run(frame_rate=60)
 --- /code ---
 

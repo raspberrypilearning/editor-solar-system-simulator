@@ -14,12 +14,6 @@ Put code to run when the mouse is pressed here
 
 Here the RGB value is converted to Hex so it can be used in a string comparison later
 
-Split Venus' data
-
-int() for whole numbers
-
-float() for decimals
-
 Yellow
 
 2D transformation
