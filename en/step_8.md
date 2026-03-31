@@ -1,44 +1,29 @@
-<h2 class="c-project-heading--task">Add Earth facts</h2>
+<h2 class="c-project-heading--task">Challenge: Upgrade your project</h2>
 
---- task ---
-Add an Earth check so clicking Earth prints Earth’s name and fact.
---- /task ---
+### Step 1
+Choose one (or more) upgrades to improve your solar system model.
 
 <div class="c-project-callout c-project-callout--tip" style="font-size: 1.1em">
-  <strong>Tip:</strong> Using <code>elif</code> means only one planet’s fact prints per click.
+  <strong>Tip:</strong> Pick one upgrade first, get it working, then try another. Small wins add up!
 </div>
 
-<div class="c-project-code">
+### Step 2
+### Add another planet
+Add a new planet so your model has **more than three**.
 
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 107
-line_highlights: 118-120
----
-def mouse_pressed():
-    # Put code to run when the mouse is pressed here
-    # Here the RGB value is converted to Hex so it can be used in a string comparison later
-    pixel_colour = Color(get(mouse_x, mouse_y)).hex
+To add a planet to your model you will need to:
 
-    if pixel_colour == mercury['colour'].hex:
-        print(mercury['name'])
-        print(mercury['info'])
-    elif pixel_colour == venus['colour'].hex:
-        print(venus['name'])
-        print(venus['info'])
-    elif pixel_colour == earth['colour'].hex:
-        print(earth['name'])
-        print(earth['info'])
+- Add code to load it in `load_planets()`
+- Add code to draw its orbit in `draw_orbits()`
+- Add code to draw the planet in `draw_planets()`
+- Add code to notice when the planet is clicked, and print out its info in `mouse_pressed()`
 
-
-run(frame_rate=60)
---- /code ---
-
+<div class="c-project-callout c-project-callout--tip" style="font-size: 1.1em">
+  <strong>Tip:</strong> Don’t forget you can copy and paste code!
+  <strong>Tip:</strong> Increase the size() in your setup() function to make the model large enough to see your new planets; size(900, 900) will fit them all in.
 </div>
 
---- task ---
-**Test:** Run your code and click Earth — check Earth’s **name and fact** print in the output.
---- /task ---
+### Step 3
+
+### Make up your own planet
+Add an extra planet to the solar system! Create a new global variable with a dictionary for it. Then, add code to draw it and to print out its info.
