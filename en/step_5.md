@@ -1,13 +1,7 @@
-<h2 class="c-project-heading--task">Add Venus</h2>
+<h2 class="c-project-heading--task">Add Venus facts</h2>
 
---- task ---
-Load Venus from <code>planets.csv</code> and draw Venus so you can see two planets orbiting.
---- /task ---
-
-<div class="c-project-callout c-project-callout--tip" style="font-size: 1.1em">
-  <strong>Tip:</strong> CSV data is read as text, so you use <code>int()</code> and <code>float()</code> to convert number strings to number **values**.
-</div>
-
+### Step 1
+Add a Venus check so clicking Venus prints Venus’s name and fact.
 <div class="c-project-code">
 
 --- code ---
@@ -15,73 +9,30 @@ Load Venus from <code>planets.csv</code> and draw Venus so you can see two plane
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 10
-line_highlights: 15,31-41,45,57-69
+line_number_start: 85
+line_highlights: 93-95
 ---
-# draw_orbits function
-def draw_orbits():
-    no_fill()
-    stroke(255)  # Make it white
-    ellipse(width / 2, height / 2, mercury['orbit'], mercury['orbit'])
-    ellipse(width / 2, height / 2, venus['orbit'], venus['orbit'])
+def mouse_pressed():
+    # Put code to run when the mouse is pressed here
+    # Here the RGB value is converted to Hex so it can be used in a string comparison later
+    pixel_colour = Color(get(mouse_x, mouse_y)).hex
 
-# draw_planets function
-def draw_planets():
-    colour = mercury['colour']
-    orbit = mercury['orbit']
-    size = mercury['size']
-    speed = mercury['speed']
-
-    make_planet(
-        colour,
-        orbit,
-        size,
-        speed
-    )
-
-    colour = venus['colour']
-    orbit = venus['orbit']
-    size = venus['size']
-    speed = venus['speed']
-
-    make_planet(
-        colour,
-        orbit,
-        size,
-        speed
-    )
-
-# load_planets function
-def load_planets():
-    global mercury, venus
-
-    mercury = {
-        'name': 'Mercury',
-        'colour': Color(165, 42, 42),
-        'size': 15,
-        'orbit': 150,
-        'speed': 1,
-        'info': 'The smallest, and fastest, planet.'
-    }
+    if pixel_colour == mercury['colour'].hex:
+        print(mercury['name'])
+        print(mercury['info'])
+    elif pixel_colour == venus['colour'].hex:
+        print(venus['name'])
+        print(venus['info'])
 
 
-    with open('planets.csv') as f:
-        data = f.read()
-        lines = data.splitlines()
-
-    planet = lines[2].split(',')
-    venus = {
-        'name': planet[0],
-        'colour': Color(int(planet[1]), int(planet[2]), int(planet[3])),
-        'size': int(planet[4]),
-        'orbit': int(planet[5]),
-        'speed': float(planet[6]),
-        'info': planet[7]
-    }
+run(frame_rate=60)
 --- /code ---
 
 </div>
 
---- task ---
-**Test:** Run your code and check you can see **two orbit rings** and **two planets** moving.
---- /task ---
+### Step 2
+**Test:** Run your code and click Venus — check Venus’s **name and fact** print in the output.
+
+<div class="c-project-callout c-project-callout--debug" style="font-size: 1.1em">
+  <strong>Debug:</strong> If clicking does nothing, make sure you used <code>==</code> for comparison (not <code>=</code>).
+</div>
