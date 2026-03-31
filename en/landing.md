@@ -1,6 +1,6 @@
 ## What you will make
 
-Run the finished solar system model and explore what it does.
+Create a solar system model that animates planets and prints facts when you click them.
 
 Click a planet when it passes under your mouse — later, you’ll make your program print facts about it.
 
