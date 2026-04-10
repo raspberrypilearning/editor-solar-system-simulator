@@ -1,3 +1,4 @@
 name: "Solar System"
 identifier: "editor-solar-system-example"
 type: 'python'
+build: true
