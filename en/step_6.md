@@ -1,7 +1,8 @@
 <h2 class="c-project-heading--task">Add Earth</h2>
 
-### Step 1
 Load Earth from <code>planets.csv</code> and draw Earth so you can see three planets orbiting.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 <div class="c-project-code">
 
@@ -99,8 +100,9 @@ def load_planets():
 
 </div>
 
-### Step 2
-**Test:** Run your code and check you can see **three orbit rings** and **three planets** moving.
+## Now run your code
+
+Check you can see **three orbit rings** and **three planets** moving.
 <div class="c-project-callout c-project-callout--debug" style="font-size: 1.1em">
   <strong>Debug:</strong> If you get an “index out of range” error, open <code>planets.csv</code> and check Earth is on the line your code is using.
 </div>

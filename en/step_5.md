@@ -1,7 +1,9 @@
 <h2 class="c-project-heading--task">Add Venus facts</h2>
 
-### Step 1
 Add a Venus check so clicking Venus prints Venus’s name and fact.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
 <div class="c-project-code">
 
 --- code ---
@@ -30,8 +32,9 @@ run(frame_rate=60)
 
 </div>
 
-### Step 2
-**Test:** Run your code and click Venus — check Venus’s **name and fact** print in the output.
+## Now run your code
+
+Click Venus — check Venus’s **name and fact** print in the output.
 
 <div class="c-project-callout c-project-callout--debug" style="font-size: 1.1em">
   <strong>Debug:</strong> If clicking does nothing, make sure you used <code>==</code> for comparison (not <code>=</code>).

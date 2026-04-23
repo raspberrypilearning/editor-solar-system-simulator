@@ -1,7 +1,8 @@
 <h2 class="c-project-heading--task">Add Venus</h2>
 
-### Step 1
 Load Venus from <code>planets.csv</code> and draw Venus so you can see two planets orbiting.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 <div class="c-project-callout c-project-callout--tip" style="font-size: 1.1em">
   <strong>Tip:</strong> CSV data is read as text, so you use <code>int()</code> and <code>float()</code> to convert number strings to number **values**.
@@ -81,5 +82,6 @@ def load_planets():
 
 </div>
 
-### Step 2
-**Test:** Run your code and check you can see **two orbit rings** and **two planets** moving.
+## Now run your code
+
+Check you can see **two orbit rings** and **two planets** moving.

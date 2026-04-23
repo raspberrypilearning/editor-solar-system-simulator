@@ -1,7 +1,8 @@
 <h2 class="c-project-heading--task">Show Mercury orbit</h2>
 
-### Step 1
 Create a Mercury dictionary and use it to draw a white orbit ring around the Sun.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 <div class="c-project-callout c-project-callout--tip" style="font-size: 1.1em">
   <strong>Tip:</strong> You can fetch a value from a dictionary using square brackets, like <code>mercury['orbit']</code>.
@@ -79,5 +80,6 @@ run(frame_rate=60)
   <strong>Debug:</strong> If you get <code>NameError: name 'mercury' is not defined</code>, check you added both <code>global mercury</code> in <code>load_planets()</code> and the <code>load_planets()</code> line in <code>setup()</code>.
 </div>
 
-### Step 2
-**Test:** Run your code and check you can see **one white orbit ring** around the Sun.
+## Now run your code
+
+Check you can see **one white orbit ring** around the Sun.
