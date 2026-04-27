@@ -34,4 +34,4 @@ Add an extra planet to the solar system! Create a new global variable with a dic
 
 ## Now run your code
 
-Confirm the observable result.
+Run your code and check that your extra planet appears in the model and shows its information when you click it.
