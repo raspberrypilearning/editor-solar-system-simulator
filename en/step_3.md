@@ -1,7 +1,8 @@
 <h2 class="c-project-heading--task">Add Mercury facts</h2>
 
-### Step 1
 Detect when Mercury is clicked and print its name and fact in the output.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 <div class="c-project-callout c-project-callout--tip" style="font-size: 1.1em">
   <strong>Tip:</strong> Your code checks the colour of the pixel you clicked — so you need to click on the planet itself.
@@ -41,5 +42,6 @@ run(frame_rate=60)
 
 </div>
 
-### Step 2
-**Test:** Run your code and click Mercury — check Mercury’s **name and fact** print in the output.
+## Now run your code
+
+Click Mercury — check Mercury’s **name and fact** print in the output.
