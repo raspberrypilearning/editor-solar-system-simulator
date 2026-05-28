@@ -2,8 +2,6 @@
 
 Load Earth from <code>planets.csv</code> and draw Earth so you can see three planets orbiting.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 <div class="c-project-code">
 
 --- code ---

@@ -2,8 +2,6 @@
 
 Add an Earth check so clicking Earth prints Earth’s name and fact.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 <div class="c-project-callout c-project-callout--tip" style="font-size: 1.1em">
   <strong>Tip:</strong> Using <code>elif</code> means only one planet’s fact prints per click.
 </div>
