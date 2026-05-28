@@ -2,8 +2,6 @@
 
 Use Mercury’s dictionary to draw Mercury so you can see it moving around the orbit.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 <div class="c-project-callout c-project-callout--debug" style="font-size: 1.1em">
   <strong>Debug:</strong> If you get an error about <code>make_planet</code>, check <code>make_planet.py</code> is in your project and the import line is still at the top of <code>main.py</code>.
 </div>
