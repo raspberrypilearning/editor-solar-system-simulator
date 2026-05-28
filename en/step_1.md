@@ -2,8 +2,6 @@
 
 Create a Mercury dictionary and use it to draw a white orbit ring around the Sun.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 <div class="c-project-callout c-project-callout--tip" style="font-size: 1.1em">
   <strong>Tip:</strong> You can fetch a value from a dictionary using square brackets, like <code>mercury['orbit']</code>.
 </div>
