@@ -2,8 +2,6 @@
 
 Add a Venus check so clicking Venus prints Venus’s name and fact.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 <div class="c-project-code">
 
 --- code ---
