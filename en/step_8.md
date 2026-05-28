@@ -2,8 +2,6 @@
 
 Choose one (or more) upgrades to improve your solar system model.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ## Step 1
 
 <div class="c-project-callout c-project-callout--tip" style="font-size: 1.1em">
