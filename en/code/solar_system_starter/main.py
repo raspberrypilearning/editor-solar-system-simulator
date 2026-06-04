@@ -8,8 +8,14 @@ def draw_sun():
 
 
 # draw_orbits function
+
+
 # draw_planets function
+
+
 # load_planets function
+
+
 def setup():
     # Put code to run once here
     size(400, 400)
