@@ -1,21 +1,12 @@
-<h2 class="c-project-heading--task">Add Earth facts</h2>
+## Add Earth facts
 
 Add an Earth check so clicking Earth prints Earth’s name and fact.
 
-<div class="c-project-callout c-project-callout--tip" style="font-size: 1.1em">
-  <strong>Tip:</strong> Using <code>elif</code> means only one planet’s fact prints per click.
-</div>
+> [!TIP]
+>
+> Using `elif` means only one planet’s fact prints per click.
 
-<div class="c-project-code">
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 107
-line_highlights: 118-120
----
+```python filename="main.py" line_numbers="true" line_number_start="107" line_highlights="118-120"
 def mouse_pressed():
     # Put code to run when the mouse is pressed here
     # Here the RGB value is converted to Hex so it can be used in a string comparison later
@@ -33,9 +24,7 @@ def mouse_pressed():
 
 
 run(frame_rate=60)
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 

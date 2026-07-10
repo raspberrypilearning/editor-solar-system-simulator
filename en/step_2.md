@@ -1,21 +1,12 @@
-<h2 class="c-project-heading--task">Draw Mercury</h2>
+## Draw Mercury
 
 Use Mercury’s dictionary to draw Mercury so you can see it moving around the orbit.
 
-<div class="c-project-callout c-project-callout--debug" style="font-size: 1.1em">
-  <strong>Debug:</strong> If you get an error about <code>make_planet</code>, check <code>make_planet.py</code> is in your project and the import line is still at the top of <code>main.py</code>.
-</div>
+> [!DEBUG]
+>
+> If you get an error about `make_planet`, check `make_planet.py` is in your project and the import line is still at the top of `main.py`.
 
-<div class="c-project-code">
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 1
-line_highlights: 16-28,55
----
+```python filename="main.py" line_numbers="true" line_number_start="1" line_highlights="16-28,55"
 from p5 import *
 from make_planet import make_planet
 
@@ -78,9 +69,7 @@ def mouse_pressed():
     pixel_colour = Color(get(mouse_x, mouse_y)).hex
 
 run(frame_rate=60)
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 
