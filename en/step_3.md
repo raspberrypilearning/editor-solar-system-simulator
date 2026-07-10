@@ -1,21 +1,12 @@
-<h2 class="c-project-heading--task">Add Mercury facts</h2>
+## Add Mercury facts
 
 Detect when Mercury is clicked and print its name and fact in the output.
 
-<div class="c-project-callout c-project-callout--tip" style="font-size: 1.1em">
-  <strong>Tip:</strong> Your code checks the colour of the pixel you clicked — so you need to click on the planet itself.
-</div>
+> [!TIP]
+>
+> Your code checks the colour of the pixel you clicked — so you need to click on the planet itself.
 
-<div class="c-project-code">
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 49
-line_highlights: 62-64
----
+```python filename="main.py" line_numbers="true" line_number_start="49" line_highlights="62-64"
 def draw():
     # Put code to run every frame here
     background(0)
@@ -36,9 +27,7 @@ def mouse_pressed():
 
 
 run(frame_rate=60)
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 

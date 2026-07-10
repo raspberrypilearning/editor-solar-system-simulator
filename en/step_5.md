@@ -1,17 +1,8 @@
-<h2 class="c-project-heading--task">Add Venus facts</h2>
+## Add Venus facts
 
 Add a Venus check so clicking Venus prints Venus’s name and fact.
 
-<div class="c-project-code">
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 85
-line_highlights: 93-95
----
+```python filename="main.py" line_numbers="true" line_number_start="85" line_highlights="93-95"
 def mouse_pressed():
     # Put code to run when the mouse is pressed here
     # Here the RGB value is converted to Hex so it can be used in a string comparison later
@@ -26,14 +17,12 @@ def mouse_pressed():
 
 
 run(frame_rate=60)
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 
 Click Venus — check Venus’s **name and fact** print in the output.
 
-<div class="c-project-callout c-project-callout--debug" style="font-size: 1.1em">
-  <strong>Debug:</strong> If clicking does nothing, make sure you used <code>==</code> for comparison (not <code>=</code>).
-</div>
+> [!DEBUG]
+>
+> If clicking does nothing, make sure you used `==` for comparison (not `=`).

@@ -1,21 +1,12 @@
-<h2 class="c-project-heading--task">Show Mercury orbit</h2>
+## Show Mercury orbit
 
 Create a Mercury dictionary and use it to draw a white orbit ring around the Sun.
 
-<div class="c-project-callout c-project-callout--tip" style="font-size: 1.1em">
-  <strong>Tip:</strong> You can fetch a value from a dictionary using square brackets, like <code>mercury['orbit']</code>.
-</div>
+> [!TIP]
+>
+> You can fetch a value from a dictionary using square brackets, like `mercury['orbit']`.
 
-<div class="c-project-code">
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 1
-line_highlights: 11-14,21-31,37,46
----
+```python filename="main.py" line_numbers="true" line_number_start="1" line_highlights="11-14,21-31,37,46"
 from p5 import *
 from make_planet import make_planet
 
@@ -70,13 +61,11 @@ def mouse_pressed():
 
 
 run(frame_rate=60)
---- /code ---
+```
 
-</div>
-
-<div class="c-project-callout c-project-callout--debug" style="font-size: 1.1em">
-  <strong>Debug:</strong> If you get <code>NameError: name 'mercury' is not defined</code>, check you added both <code>global mercury</code> in <code>load_planets()</code> and the <code>load_planets()</code> line in <code>setup()</code>.
-</div>
+> [!DEBUG]
+>
+> If you get `NameError: name 'mercury' is not defined`, check you added both `global mercury` in `load_planets()` and the `load_planets()` line in `setup()`.
 
 ## Now run your code
 

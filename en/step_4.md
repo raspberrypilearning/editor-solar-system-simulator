@@ -1,21 +1,12 @@
-<h2 class="c-project-heading--task">Add Venus</h2>
+## Add Venus
 
-Load Venus from <code>planets.csv</code> and draw Venus so you can see two planets orbiting.
+Load Venus from `planets.csv` and draw Venus so you can see two planets orbiting.
 
-<div class="c-project-callout c-project-callout--tip" style="font-size: 1.1em">
-  <strong>Tip:</strong> CSV data is read as text, so you use <code>int()</code> and <code>float()</code> to convert number strings to number **values**.
-</div>
+> [!TIP]
+>
+> CSV data is read as text, so you use `int()` and `float()` to convert number strings to number **values**.
 
-<div class="c-project-code">
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 10
-line_highlights: 15,31-41,45,57-69
----
+```python filename="main.py" line_numbers="true" line_number_start="10" line_highlights="15,31-41,45,57-69"
 # draw_orbits function
 def draw_orbits():
     no_fill()
@@ -76,9 +67,7 @@ def load_planets():
         'speed': float(planet[6]),
         'info': planet[7]
     }
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 
